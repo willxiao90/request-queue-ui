@@ -12,7 +12,7 @@ function AddRequest(props) {
   return (
     <form className="add-request">
       <div>
-        <label>request name:</label>
+        <label>Request name:</label>
         <input 
           type="text" 
           value={name} 
@@ -20,13 +20,13 @@ function AddRequest(props) {
           ></input>
       </div>
       <div>
-        <label>request type:</label>
+        <label>Request type:</label>
         <select 
           value={type} 
           onChange={setType}
           >
-            <option value="1">echo name in 1 seconds</option>
-            <option value="2">return random number in 2 seconds</option>
+            <option value="1">Echo name in 1 seconds</option>
+            <option value="2">Return random number in 2 seconds</option>
           </select>
       </div>
       <button onClick={handleSubmit}>Add</button>
