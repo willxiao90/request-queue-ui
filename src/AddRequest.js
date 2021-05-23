@@ -5,32 +5,42 @@ function AddRequest(props) {
   const [name, setName] = useState('');
   const [type, setType] = useState('1');
 
+  const nameInput = React.createRef();
+
   function handleSubmit(){
-    props.submit({name, type})
+    if(name.trim().length === 0){
+      nameInput.current.focus();
+      return;
+    }
+    props.submit({name, type});
+    setName('');
+    setType('1');
   }
 
   return (
-    <form className="add-request">
-      <div>
-        <label>Request name:</label>
+    <div className="add-request">
+      <div className="form-item">
+        <label>Request name: </label>
         <input 
           type="text" 
+          ref={nameInput}
           value={name} 
-          onChange={setName}
+          onChange={e => setName(e.target.value)}
+          placeholder="required"
           ></input>
       </div>
-      <div>
-        <label>Request type:</label>
+      <div className="form-item">
+        <label>Request type: </label>
         <select 
           value={type} 
-          onChange={setType}
+          onChange={e => setType(e.target.value)}
           >
             <option value="1">Echo name in 1 seconds</option>
-            <option value="2">Return random number in 2 seconds</option>
+            <option value="2">Echo random number in 2 seconds</option>
           </select>
       </div>
-      <button onClick={handleSubmit}>Add</button>
-    </form>
+      <button onClick={handleSubmit}>Add request</button>
+    </div>
   );
 }
 

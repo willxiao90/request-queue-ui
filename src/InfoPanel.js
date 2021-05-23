@@ -6,7 +6,7 @@ function InfoPanel(props) {
       <ul>
       {props.logs.map((msg, index) =>
         <li key={index}>
-          {msg}
+          <span className="info-panel__msg ellipsis" title={msg}>{msg}</span>
         </li>
       )}
       </ul>

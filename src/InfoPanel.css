@@ -1,0 +1,26 @@
+.info-panel{
+    border: 1px solid #E1E4E8;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+
+.info-panel ul{
+    padding: 0;
+    margin: 0;
+    max-height: 430px;
+    overflow-y: auto;
+}
+
+.info-panel ul li{
+    list-style: none;
+    padding: 8px 10px;
+    border-bottom: 1px solid #E1E4E8;
+    font-size: 12px;
+    color: #666;
+}
+
+.info-panel .info-panel__msg{
+    width: 100%;
+}

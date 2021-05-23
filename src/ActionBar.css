@@ -1,0 +1,10 @@
+.action-bar{
+    padding: 8px 10px;
+    border: 1px solid #E1E4E8;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.action-bar button{
+    display: inline-block;
+}

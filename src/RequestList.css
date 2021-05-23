@@ -1,0 +1,73 @@
+.request-list{
+  border: 1px solid #E1E4E8;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.request-list .search-input{
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #E1E4E8;
+}
+
+.request-list .request-container{
+  overflow-y: auto;
+  height: 355px;
+  position: relative;
+}
+
+.request-list .empty-tips{
+  width: 100%;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.request-list .request-item{
+  padding: 8px 10px;
+  border-bottom: 1px solid #E1E4E8;
+  display: flex;
+  position: relative;
+}
+
+.request-list .request-item:last-child{
+  border-bottom: none;
+}
+
+.request-list .request-no{
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.request-list .request-name{
+  font-size: 16px;
+  flex: 1;
+  max-width: 350px;
+}
+
+.request-list .cancel-btn{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  color: #999;
+  text-align: center;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.request-list .cancel-btn.active{
+  visibility: visible;
+}

@@ -1,0 +1,17 @@
+.add-request{
+    padding: 8px 10px;
+    border: 1px solid #E1E4E8;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.add-request .form-item{
+    margin-bottom: 10px;
+}
+
+.add-request .form-item input,
+.add-request .form-item select{
+    width: 300px;
+    padding: 3px 5px;
+}
